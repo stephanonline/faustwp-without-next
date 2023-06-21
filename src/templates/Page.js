@@ -23,9 +23,8 @@ Component.query = gql`
 `;
 
 Component.variables = (query, ctx) => {
-  console.log(query)
   const { databaseId } = query;
   return {
-    databaseId: 2,
+    databaseId,
   };
 };
